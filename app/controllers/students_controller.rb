@@ -1,3 +1,4 @@
+
 class StudentsController < ApplicationController
   before_action :set_student, only: :show
   
@@ -8,6 +9,10 @@ class StudentsController < ApplicationController
   def show
     @student = Student.find(params[:id])
   end
+
+  def activate_student_path
+    @student = Student.find(params[:id])
+  end  
 
   private
 
