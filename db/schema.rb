@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20190918233926) do
     t.string   "last_name"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.boolean  "status",     default: false
     t.boolean  "active",     default: false
   end
 
